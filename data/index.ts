@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa6";
 import { LuGraduationCap } from "react-icons/lu";
 
 export const navItems = [
+  { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
