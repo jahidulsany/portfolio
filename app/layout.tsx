@@ -1,3 +1,4 @@
+import ActiveSectionContextProvider from "@/context/active-section-context";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,8 +7,8 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sany's Portfolio",
-  description: "A Modern and Minimal React-Next.js Development Portfolio",
+  title: "Jahidul's Portfolio",
+  description: "A Modern and Minimalist React-Next.js Dev Portfolio",
 };
 
 export default function RootLayout({
@@ -17,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <link rel="icon" href="" sizes="any" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -25,7 +28,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ActiveSectionContextProvider>
+            {children}
+          </ActiveSectionContextProvider>
         </ThemeProvider>
       </body>
     </html>

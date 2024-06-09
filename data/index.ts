@@ -1,3 +1,8 @@
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa6";
+import { LuGraduationCap } from "react-icons/lu";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -10,7 +15,8 @@ export const gridItems = [
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
-    className: "text-white lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className:
+      "text-white lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -72,35 +78,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Coming soon",
-    des: "Comming Soon",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Facehook",
+    des: "A social media app with features like posts, reactions, comments, profile, etc.",
+    img: "/facehook.png",
+    iconLists: ["/re.svg", "/tail.svg", "/fm.svg"],
+    link: "",
   },
   {
     id: 2,
-    title: "Coming Soon",
-    des: "Coming Soon",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Filmpire",
+    des: "An AI powered movie app with React and Redux, including filtered and pagination features along with authentication.",
+    img: "/filmpire.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg"],
+    link: "",
   },
   {
     id: 3,
-    title: "Coming Soon",
-    des: "Coming Soon",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Cryptoket",
+    des: "An NFT Marketplace related to NFT seller, hot bids, details of NFT profile, checkout and so on.",
+    img: "/cryptoket.png",
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg"],
+    link: "",
   },
   {
     id: 4,
-    title: "Coming Soon",
-    des: "Coming Soon",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "EduConnect",
+    des: "A collaborative platform for dynamic and interactive learning.",
+    img: "/educonnect.png",
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg"],
+    link: "",
   },
 ];
 
@@ -136,6 +142,33 @@ export const testimonials = [
     title: "Director of AlphaStream Technologies",
   },
 ];
+
+export const experiencesData = [
+  {
+    title: "The Advanced Web Design and Development",
+    location: "Sylhet, Bangladesh",
+    description:
+      "After completing six months of intensive studying, I graduated, marking the initial step into the world of development and designing frontends for numerous projects. During this time, I independently built my first websites. While I secured an internship opportunity, I, unfortunately, had to decline it due to preparations for studying abroad.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2019",
+  },
+  {
+    title: "The Complete Full-stack JavaScript Development",
+    location: "Dhaka, Bangladesh",
+    description:
+      "Due to the impact of Covid-19, I was unable to pursue my plans for studying abroad. Instead, I seized the opportunity to enroll in a comprehensive 10-month Complete Web Development bootcamp course, where I delved into the intricacies of JamStack and MERN stack technologies.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - 2021",
+  },
+  {
+    title: "Next Level Web Development",
+    location: "London, UK",
+    description:
+      "After earning my MSc from the University of Greenwich, I made the decision to enroll in the most advanced full-stack course, where I honed my skills to the next level. I delved into revolutionary technologies such as Next.js, TypeScript, Redux, and more. Right now, I am actively seeking a front-end developer role.",
+    icon: React.createElement(FaReact),
+    date: "2022 - 2023",
+  },
+] as const;
 
 export const workExperience = [
   {
