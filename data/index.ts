@@ -120,27 +120,28 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Jahidul sany was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jahidul's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jahidul is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Choosing Jahidul was one of the best decisions we've made. His technical expertise is unmatched, and hhe provided outstanding support throughout the entire development process. Our website is now faster, more reliable, and packed with features that enhance the user experience. He was always available to answer our questions and made sure he was involved in every step of the process.",
+    name: "Emily R.",
+    title: "Founder of Creative Spaces",
+  },
+
+  {
+    quote:
+      "Working with Jahidul sany was a game-changer for our business. He took the time to understand our brand and delivered a website that was not only visually stunning but also incredibly user-friendly. The innovative design and seamless functionality have significantly improved our user engagement and conversion rates. His team was professional, responsive, and always went the extra mile to ensure our satisfaction. We couldn't be happier with the results!",
+    name: "Sarah K.",
+    title: "Marketing Director at GreenWave Solutions",
   },
   {
     quote:
-      "Collaborating with Jahidul sany was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jahidul's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jahidul is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Jahidul Sany truly exceeded our expectations with his creative solutions and excellent communication. From the initial consultation to the final launch, he kept us informed and involved every step of the way. The end result is a beautiful, responsive website that perfectly captures our brand essence. Their innovative approach and commitment to meeting deadlines made the entire process smooth and stress-free. We highly recommend him for any web development needs.",
+    name: "Michael H.",
+    title: "COO of Tech Innovators Inc.",
   },
   {
     quote:
-      "Collaborating with Jahidul sany was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jahidul's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jahidul is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Jahidul sany was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Jahidul's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Jahidul is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Working with Jahidul Sany was an outstanding experience. His expertise, timely responses, and commitment to excellence were apparent in every phase of our project. Jahidul's passion for development is truly remarkable. If you want to enhance your website and brand, Jahidul is the perfect choice.",
+    name: "Hasib Mahmud",
+    title: "Director of Webdevs",
   },
 ];
 

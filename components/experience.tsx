@@ -1,50 +1,55 @@
-"use client";
+import { Button } from "@/components/ui/MovingBorders";
+import { workExperience } from "@/data";
+import Image from "next/image";
 
-import { experiencesData } from "@/data";
-import { useSectionInView } from "@/lib/hooks";
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-
-export default function Experience() {
-  const { ref } = useSectionInView("Experience");
-
+const Experience = () => {
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <h2 className="">My experience</h2>
-      <VerticalTimeline lineColor="">
-        {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            <VerticalTimelineElement
-              contentStyle={{
-                background: "rgba(255, 255, 255, 0.05)",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "left",
-                padding: "1.3rem 2rem",
-              }}
-              contentArrowStyle={{
-                borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
-              }}
-              date={item.date}
-              icon={item.icon}
-              iconStyle={{
-                background: "rgba(255, 255, 255, 0.15)",
-                fontSize: "1.5rem",
-              }}
-            >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
-              </p>
-            </VerticalTimelineElement>
-          </React.Fragment>
+    <div className="py-20 w-full">
+      <h1 className="heading">
+        My <span className="text-purple">work experience</span>
+      </h1>
+
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+        {workExperience.map((card) => (
+          <Button
+            key={card.id}
+            //   random duration will be fun , I think , may be not
+            duration={Math.floor(Math.random() * 10000) + 10000}
+            borderRadius="1.75rem"
+            style={{
+              //   add these two
+              //   you can generate the color from here https://cssgradient.io/
+              background: "rgb(4,7,29)",
+              backgroundColor:
+                "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+              // add this border radius to make it more rounded so that the moving border is more realistic
+              borderRadius: `calc(1.75rem* 0.96)`,
+            }}
+            // remove bg-white dark:bg-slate-900
+            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+          >
+            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+              <Image
+                width={64}
+                height={64}
+                src={card.thumbnail}
+                alt={card.thumbnail}
+                className="lg:w-32 md:w-20"
+              />
+              <div className="lg:ms-5">
+                <h1 className="text-start text-xl md:text-2xl font-bold">
+                  {card.title}
+                </h1>
+                <p className="text-start text-white-100 mt-3 font-semibold">
+                  {card.desc}
+                </p>
+              </div>
+            </div>
+          </Button>
         ))}
-      </VerticalTimeline>
-    </section>
+      </div>
+    </div>
   );
-}
+};
+
+export default Experience;
